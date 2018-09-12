@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <button onclick="clickMe('Hello again, world!')">Click Me!</button>
+    <br><br>
+    <button onclick="clickMe2('<strong>I was clicked!</strong>')">Click Me, Too!</button>
+    <div id="changeMe"></div>
+  <script>
+    function clickMe(x){
+      alert("Hello, world! " + x);
+    }
+
+    function clickMe2(x){
+      document.getElementById("changeMe").innerHTML=x;
+    }
+  </script>
+  </body>
+</html>
